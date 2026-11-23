@@ -4,36 +4,80 @@
     <meta charset="utf-8" />
     <title>Unit 4 - Flexbox</title>
     <style>
+
+      .book-container {
+        background-color:rgb(42, 165, 144);
+        display:flex;
+        height:400px;
+        justify-content:space-around;
+        align-items:center;
+      }
+
+      .book-item {
+        background-color:rgb(21, 88, 165);
+        width:200px;
+      }
+
+      .house-sea {
+        background-color:cadetblue;
+        display:flex;
+        height:500px;
+        justify-content:end;
+        align-items:normal;
+      }
+
+      .klune {
+        background-color:beige;
+        width:300px;
+      }
+
+      .aunties {
+        background-color:darkgreen;
+        display:flex;
+        height:300px;
+        justify-content:space-around;
+        align-items:start;
+      }
+
+      .sutanto {
+        background-color:chartreuse;
+      }
     </style>
   </head>
   <body>
     <h1>Cozy Reads</h1>
-
+    <div class="book-container">
       <img
         src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654581271i/61242426.jpg"
         width="200"
+        class="book-item"
       />
-      <p>
+      <p class="book-item">
         It’s not easy to build a coffee shop in a place that has never had
         coffee before. #CozyFantasy
       </p>
-
-    <img
+      </div>
+    <div class="house-sea">
+      <img
       src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1569514209i/45047384.jpg"
       width="200"
+        class="klune"
     />
-    <p>
+    <p class="klune">
       The main character must oversee an inspection of a house for magical
       children. #CozyFantasy
     </p>
-
+    </div>
+    <div class="aunties">
     <img
       src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1601307658i/53310061.jpg"
       width="200"
+        class="sutanto"
     />
-    <p>
+    <p class="sutanto">
       Who better to help cover up an accidental murder than overly protective
       aunties. #CozyMystery
     </p>
+    </div>
   </body>
 </html>
